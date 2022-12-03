@@ -40,16 +40,16 @@
                     <p class="lead">This is Part 1.2.</p>
                 </div>
                 <div class="col-lg-2 order-1 mb-3 d-flex flex-column gap-2 mx-auto align-items-stretch">
-                    <button name="1.2.1" class="btn btn-primary btn-block" data-sql="SELECT COUNT(emp_id)&#10FROM employees&#10WHERE hire_date = '1991-05-01'&#10LIMIT 100&#59" onClick="reply_click(this)">1.2.1</button>
-                    <button name="1.2.2" class="btn btn-primary btn-block" data-sql="SELECT COUNT (title), emp_id&#10FROM titles&#10GROUP BY emp_id&#10HAVING COUNT(emp_id)> 2&#10LIMIT 100&#59" onClick="reply_click(this)">1.2.2</button>
-                    <button name="1.2.3" class="btn btn-primary btn-block" data-sql="SELECT *&#10FROM employees&#10WHERE gender = 'F'&#10LIMIT 100&#59" onClick="reply_click(this)">1.2.3</button>
-                    <button name="1.2.4" class="btn btn-primary btn-block" data-sql="SELECT *&#10FROM employees&#10WHERE hire_date &#60 '1986-01-01'&#10&#9AND last_name = 'Simmel'&#10LIMIT 100&#59" onClick="reply_click(this)">1.2.4</button>
-                    <button name="1.2.5" class="btn btn-primary btn-block" data-sql="SELECT COUNT(emp_ID) AS 'Total with B'&#10FROM employees&#10WHERE last_name LIKE 'B%'&#10LIMIT 100&#59" onClick="reply_click(this)">1.2.5</button>
-                    <button name="1.2.6" class="btn btn-primary btn-block" data-sql="CREATE TABLE emp_training (&#10&#9trainer_no INTEGER PRIMARY KEY AUTOINCREMENT,&#10&#9first_name VARCHAR(30) NOT NULL,&#10&#9last_name VARCHAR(30) NOT NULL,&#10&#9t_module VARCHAR(20)&#10)&#59" onClick="reply_click(this)">1.2.6</button>
-                    <button name="1.2.7" class="btn btn-primary btn-block" data-sql="INSERT INTO emp_training (&#10&#9first_name,&#10&#9last_name,&#10&#9t_module&#10)&#10VALUES (&#10&#9'Joe',&#10&#9'Bloggs',&#10&#9'Google Docs'&#10),&#10(&#10&#9'Fred',&#10&#9'Bloggs',&#10&#9'Google Sheets'&#10)&#59" onClick="reply_click(this)">1.2.7</button>
-                    <button name="1.2.8" class="btn btn-primary btn-block" data-sql="DROP TABLE emp_training&#59" onClick="reply_click(this)">1.2.8</button>
-                    <button name="1.2.9" class="btn btn-primary btn-block" data-sql="ALTER TABLE employees&#10ADD email_address VARCHAR(20)&#59" onClick="reply_click(this)">1.2.9</button>
-                    <button name="1.2.10" class="btn btn-primary btn-block" data-sql="UPDATE employees&#10SET email_address = 'gfacello@gmail.com'&#10WHERE emp_id = 10001&#59" onClick="reply_click(this)">1.2.10</button>
+                    <button name="1.2.1" class="btn btn-primary btn-block" data-sql="SELECT COUNT(emp_id)&#10;FROM employees&#10;WHERE hire_date = '1991-05-01'&#10;LIMIT 100&#59;" onClick="reply_click(this)">1.2.1</button>
+                    <button name="1.2.2" class="btn btn-primary btn-block" data-sql="SELECT COUNT (title), emp_id&#10;FROM titles&#10;GROUP BY emp_id&#10;HAVING COUNT(emp_id)> 2&#10;LIMIT 100&#59;" onClick="reply_click(this)">1.2.2</button>
+                    <button name="1.2.3" class="btn btn-primary btn-block" data-sql="SELECT *&#10;FROM employees&#10;WHERE gender = 'F'&#10;LIMIT 100&#59;" onClick="reply_click(this)">1.2.3</button>
+                    <button name="1.2.4" class="btn btn-primary btn-block" data-sql="SELECT *&#10;FROM employees&#10;WHERE hire_date &#60; '1986-01-01'&#10;&#9;AND last_name = 'Simmel'&#10;LIMIT 100&#59;" onClick="reply_click(this)">1.2.4</button>
+                    <button name="1.2.5" class="btn btn-primary btn-block" data-sql="SELECT COUNT(emp_ID) AS 'Total with B'&#10;FROM employees&#10;WHERE last_name LIKE 'B%'&#10;LIMIT 100&#59;" onClick="reply_click(this)">1.2.5</button>
+                    <button name="1.2.6" class="btn btn-primary btn-block" data-sql="CREATE TABLE emp_training (&#10;&#9;trainer_no INTEGER PRIMARY KEY AUTOINCREMENT,&#10;&#9;first_name VARCHAR(30) NOT NULL,&#10;&#9;last_name VARCHAR(30) NOT NULL,&#10;&#9;t_module VARCHAR(20)&#10;)&#59;" onClick="reply_click(this)">1.2.6</button>
+                    <button name="1.2.7" class="btn btn-primary btn-block" data-sql="INSERT INTO emp_training (&#10;&#9;first_name,&#10;&#9;last_name,&#10;&#9;t_module&#10;)&#10;VALUES (&#10;&#9;'Joe',&#10;&#9;'Bloggs',&#10;&#9;'Google Docs'&#10;),&#10;(&#10;&#9;'Fred',&#10;&#9;'Bloggs',&#10;&#9;'Google Sheets'&#10;)&#59;" onClick="reply_click(this)">1.2.7</button>
+                    <button name="1.2.8" class="btn btn-primary btn-block" data-sql="DROP TABLE emp_training&#59;" onClick="reply_click(this)">1.2.8</button>
+                    <button name="1.2.9" class="btn btn-primary btn-block" data-sql="ALTER TABLE employees&#10;ADD email_address VARCHAR(20)&#59;" onClick="reply_click(this)">1.2.9</button>
+                    <button name="1.2.10" class="btn btn-primary btn-block" data-sql="UPDATE employees&#10;SET email_address = 'gfacello@gmail.com'&#10;WHERE emp_id = 10001&#59;" onClick="reply_click(this)">1.2.10</button>
                 </div>
                 <div class="col-lg-10 order-2 border-success">
                     <textarea id="commands" class="mb-5">TEXT</textarea>
